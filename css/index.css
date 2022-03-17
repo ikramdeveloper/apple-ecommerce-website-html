@@ -1,0 +1,759 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Work Sans", sans-serif; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+.f-center, .back-side, .back-side::before, .back-side::after, .header-banner, .iphones-section .iphone-btns .iphone-btn, .macbook-section, .macbook-section .content, .macbook-section .content .loading-wrapper .loading, .watches-section, .watches, .watch-bands,
+.watch-cases, .watch-control, .airpods-section, .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #6edae6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0); }
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  left: 3rem; }
+  .logo i {
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0.8); }
+
+.navbar {
+  position: absolute;
+  top: 3rem;
+  right: 10%; }
+  .navbar-link {
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0 3rem;
+    color: #000;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+    .navbar-link:hover {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
+
+.cube-wrapper {
+  -webkit-perspective: 100rem;
+          perspective: 100rem; }
+
+.cube {
+  width: 30rem;
+  height: 55rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(20deg) rotateZ(0);
+          transform: rotateX(0) rotateY(20deg) rotateZ(0);
+  position: relative;
+  top: -2rem;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.front-side,
+.back-side {
+  width: 100%;
+  height: 100%;
+  background-color: #fee;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+          box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd; }
+
+.front-side {
+  padding: 2.5rem;
+  -webkit-transform: translateZ(5rem);
+          transform: translateZ(5rem); }
+  .front-side::before, .front-side::after {
+    content: "";
+    width: 100%;
+    height: 10rem;
+    background-color: #fee;
+    position: absolute;
+    -webkit-box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+            box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd; }
+  .front-side::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; }
+  .front-side::after {
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; }
+  .front-side img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.back-side {
+  -webkit-transform: translateZ(-5rem);
+          transform: translateZ(-5rem); }
+  .back-side::before, .back-side::after {
+    content: "iPhone";
+    width: 10rem;
+    height: 100%;
+    background-color: #fee;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ec1919;
+    -webkit-box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+            box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd; }
+  .back-side::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  .back-side::after {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; }
+  .back-side i {
+    font-size: 12rem;
+    color: #6edae6;
+    text-shadow: 0.1rem 0.1rem 0.2rem #aaa, -0.1rem -0.1rem 0.2rem #aaa;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+
+.controls {
+  position: absolute;
+  bottom: -15rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  border: 1rem solid rgba(0, 0, 0, 0.8); }
+  .controls a {
+    position: absolute; }
+    .controls a:nth-child(1) {
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .controls a:nth-child(2) {
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .controls a:nth-child(3) {
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .controls a:nth-child(4) {
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .controls a:nth-child(5) {
+      top: 10%;
+      right: 10%;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .controls a:nth-child(6) {
+      bottom: 10%;
+      left: 10%;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .controls a i {
+      font-size: 1.5rem;
+      color: #6edae6;
+      opacity: 0.5;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
+    .controls a:hover i {
+      opacity: 1; }
+
+.header-banner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .header-banner h1 {
+    font-size: 13rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem; }
+  .header-banner p {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    margin: 6rem 0 4rem; }
+  .header-banner span {
+    font-size: 3rem;
+    margin-bottom: 5rem; }
+  .header-banner button {
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    background-color: #000;
+    color: #6edae6;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    -webkit-clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%);
+            clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%);
+    -webkit-transition: -webkit-clip-path 0.4s;
+    transition: -webkit-clip-path 0.4s;
+    transition: clip-path 0.4s;
+    transition: clip-path 0.4s, -webkit-clip-path 0.4s; }
+    .header-banner button:hover {
+      -webkit-clip-path: polygon(40% 15%, 77% 15%, 100% 10%, 100% 90%, 75% 85%, 40% 85%, 30% 100%, 0 50%, 0 50%, 30% 0);
+              clip-path: polygon(40% 15%, 77% 15%, 100% 10%, 100% 90%, 75% 85%, 40% 85%, 30% 100%, 0 50%, 0 50%, 30% 0); }
+
+.slideshow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1; }
+  .slideshow div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s; }
+    .slideshow div.active {
+      opacity: 1; }
+
+.iphones-section {
+  width: 100%;
+  height: 100vh;
+  padding: 10vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .iphones-section h1 {
+    font-size: 10rem;
+    font-weight: 200;
+    color: #000;
+    position: relative;
+    margin-bottom: 5rem; }
+    .iphones-section h1::before {
+      content: "";
+      width: 130%;
+      height: 30vw;
+      background: -webkit-gradient(linear, left top, left bottom, from(#6edae6), to(#fff));
+      background: linear-gradient(#6edae6, #fff);
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform: skewX(-50deg);
+              transform: skewX(-50deg);
+      -webkit-transform-origin: left top;
+              transform-origin: left top;
+      z-index: -1;
+      border-radius: 1rem; }
+  .iphones-section .iphones {
+    height: 60vh;
+    width: 50vw;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6edae6), to(#fff));
+    background: linear-gradient(#6edae6, #fff);
+    border-radius: 0.5rem; }
+    .iphones-section .iphones img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: contain;
+         object-fit: contain;
+      position: absolute;
+      -webkit-transition: opacity 2s;
+      transition: opacity 2s; }
+    .iphones-section .iphones .iphone-img-2 {
+      opacity: 0; }
+    .iphones-section .iphones:hover .iphone-img-1 {
+      opacity: 0; }
+    .iphones-section .iphones:hover .iphone-img-2 {
+      opacity: 1; }
+  .iphones-section .iphone-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .iphones-section .iphone-btns .iphone-btn {
+      width: 6rem;
+      height: 6rem;
+      background: -webkit-gradient(linear, left top, right top, color-stop(60%, #333333), to(#525252));
+      background: linear-gradient(to right, #333333 60%, #525252);
+      margin: 0 3rem;
+      border-radius: 50%;
+      position: relative; }
+      .iphones-section .iphone-btns .iphone-btn::after {
+        content: "";
+        width: 50%;
+        height: 50%;
+        display: block;
+        border: 0.1rem solid #6edae6;
+        border-radius: 1rem; }
+      .iphones-section .iphone-btns .iphone-btn span {
+        position: absolute;
+        top: -3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        color: #6edae6;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
+      .iphones-section .iphone-btns .iphone-btn:hover span {
+        -webkit-transform: scale(1);
+                transform: scale(1); }
+
+.macbook-section {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15rem 0;
+  -webkit-clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
+          clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%); }
+  .macbook-section h1 {
+    font-size: 10rem;
+    font-weight: 200;
+    color: #6edae6;
+    margin-bottom: 8rem; }
+  .macbook-section .content {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-perspective: 1000rem;
+            perspective: 1000rem;
+    position: relative; }
+    .macbook-section .content.active .macbook-img-1 {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      -webkit-transition: -webkit-transform 1.5s;
+      transition: -webkit-transform 1.5s;
+      transition: transform 1.5s;
+      transition: transform 1.5s, -webkit-transform 1.5s; }
+    .macbook-section .content.active .loading-wrapper {
+      opacity: 1;
+      -webkit-transition: opacity 1s 2s;
+      transition: opacity 1s 2s; }
+      .macbook-section .content.active .loading-wrapper .loading {
+        opacity: 0;
+        -webkit-transition: 1s 5s;
+        transition: 1s 5s; }
+        .macbook-section .content.active .loading-wrapper .loading .progress-bar::after {
+          width: 100%;
+          -webkit-transition: width 1s 3s;
+          transition: width 1s 3s; }
+    .macbook-section .content.active .macbook-info {
+      opacity: 1;
+      -webkit-transition: opacity 1s 5s;
+      transition: opacity 1s 5s; }
+    .macbook-section .content img {
+      width: inherit; }
+    .macbook-section .content .macbook-img-1 {
+      -webkit-transform: rotateX(-80deg);
+              transform: rotateX(-80deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom; }
+    .macbook-section .content .loading-wrapper {
+      position: absolute;
+      width: 60%;
+      height: 85%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../images/macbook/macbook-1-desktop.png") center no-repeat;
+      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/macbook/macbook-1-desktop.png") center no-repeat;
+      z-index: -1;
+      opacity: 0; }
+      .macbook-section .content .loading-wrapper .loading {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000; }
+        .macbook-section .content .loading-wrapper .loading i {
+          font-size: 10rem;
+          color: #fff;
+          margin-bottom: 2rem; }
+        .macbook-section .content .loading-wrapper .loading .progress-bar {
+          width: 22rem;
+          height: 0.3rem;
+          background-color: #888;
+          border-radius: 5rem;
+          position: relative; }
+          .macbook-section .content .loading-wrapper .loading .progress-bar::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #fff; }
+    .macbook-section .content .macbook-info {
+      position: absolute;
+      width: 70rem;
+      text-align: center;
+      opacity: 0; }
+      .macbook-section .content .macbook-info-heading {
+        font-size: 6rem;
+        font-weight: 400;
+        color: #6edae6; }
+      .macbook-section .content .macbook-info .macbook-price {
+        font-size: 2.5rem;
+        font-weight: 200;
+        margin: 3rem 0; }
+      .macbook-section .content .macbook-info .macbook-btn {
+        width: 25rem;
+        height: 5rem;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#fff));
+        background-image: linear-gradient(#ddd, #fff);
+        border: none;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #fff, -0.1rem -0.1rem 0.1rem #fff;
+                box-shadow: 0.1rem 0.1rem 0.1rem #fff, -0.1rem -0.1rem 0.1rem #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        color: #6edae6;
+        cursor: pointer; }
+
+.watches-section {
+  height: 140vh;
+  padding: 20vh 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+
+.watches {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .watches > div {
+    position: absolute; }
+
+.watch-bands {
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s; }
+
+.watch-cases {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: margin-top 1s;
+  transition: margin-top 1s; }
+
+.watch-band-img,
+.watch-case-img {
+  width: 35rem;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.watch-control {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(221, 221, 221, 0.4);
+  border-radius: 5rem; }
+  .watch-control i {
+    font-size: 3rem;
+    color: #6edae6; }
+
+.hideControl {
+  opacity: 0;
+  visibility: hidden; }
+
+.watch-top-control {
+  top: 22vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.watch-right-control {
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.watch-bottom-control {
+  left: 50%;
+  bottom: 20vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.watch-left-control {
+  top: 50%;
+  left: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.watch-btn {
+  position: absolute;
+  bottom: 35vh;
+  right: 35%;
+  width: 13rem;
+  height: 5rem;
+  background-color: #000;
+  color: #6edae6;
+  border: 0.1rem dashed #fff;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+  cursor: pointer; }
+
+.airpods-section {
+  width: 100%;
+  height: 100vh; }
+
+.airpods {
+  width: 90%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .airpods h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 15rem;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0 #999; }
+  .airpods img {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .airpods .airpods-img-2 {
+    background-color: #6edae6; }
+
+.airpods-btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .airpods-btns button {
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: #6edae6;
+    margin: 0 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: #fff; }
+    .airpods-btns button:last-child {
+      background-color: #fff;
+      color: #6edae6; }
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  position: relative; }
+
+.icon-link {
+  margin: 0 5rem; }
+  .icon-link img {
+    width: 10rem; }
+
+.copyright {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem; }
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 45%; } }
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 40%; }
+  .navbar-link {
+    font-weight: 700; }
+  .header-banner h1 {
+    font-size: 8rem; }
+  .header-banner p {
+    font-size: 3rem; } }
+
+@media (max-width: 900px) {
+  .macbook-section .content {
+    width: 90%; }
+    .macbook-section .content .loading-wrapper {
+      width: 70%; }
+      .macbook-section .content .loading-wrapper .loading i {
+        font-size: 6rem; }
+  .footer {
+    font-size: 12rem; } }
+
+@media (max-width: 700px) {
+  .logo {
+    top: 0;
+    left: 2rem; }
+    .logo i {
+      font-size: 8rem; }
+  .controls {
+    display: none; }
+  .cube-wrapper {
+    opacity: 0.7; }
+  .cube {
+    top: 3rem; }
+  .header-banner {
+    position: absolute; }
+    .header-banner h1 {
+      position: relative;
+      left: -5rem; }
+    .header-banner h1::first-letter {
+      visibility: hidden;
+      opacity: 0; }
+    .header-banner button:hover {
+      -webkit-clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%);
+              clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%); }
+  .iphones-section .iphones {
+    height: 70vh;
+    width: 70vw; }
+  .watch-btn {
+    right: 25%; }
+  .airpods .airpods-img-1 {
+    display: none; }
+  .airpods .airpods-img-2 {
+    width: 100%; }
+  .airpods-btn {
+    background-color: #fff;
+    color: #6edae6;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
+            box-shadow: 0.1rem 0.1rem 0.1rem #ddd; }
+  .footer .icon-link {
+    margin: 0 2rem; } }
+
+@media (max-width: 550px) {
+  .navbar .navbar-link {
+    margin: 0 1.5rem; }
+  .iphones-section {
+    font-size: 8rem; }
+  .macbook-section {
+    font-size: 8rem; }
+    .macbook-section .content .macbook-info-heading {
+      font-size: 5rem; }
+    .macbook-section .content .macbook-info .macbook-btn {
+      width: 15rem;
+      height: 3rem;
+      font-size: 1.3rem; }
+  .airpods-btns {
+    width: 50rem;
+    text-align: center; }
+  .footer .icon-link img {
+    width: 8rem; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 35%; }
+  .logo {
+    top: 10rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .navbar {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
+  .header-banner p {
+    text-align: center; }
+  .iphones-section .iphones {
+    width: 75vw; }
+  .macbook-section h1 {
+    font-size: 6rem; }
+  .macbook-section .content .macbook-info {
+    width: 40rem; }
+    .macbook-section .content .macbook-info-heading {
+      font-size: 3rem; }
+    .macbook-section .content .macbook-info .macbook-price {
+      font-size: 2rem;
+      font-weight: 300; }
+  .watch-btn {
+    right: 15%; }
+  .footer .icon-link img {
+    width: 6rem; } }
