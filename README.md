@@ -1,4 +1,6 @@
-# Apple Ecommerce Website Using SCSS & JS
+# Apple Ecommerce Website
+
+###### Using SCSS and JS
 
 ---
 
