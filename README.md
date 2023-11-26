@@ -2,7 +2,6 @@
 
 Using SCSS and JS
 
----
 
 ## Author Links
 
@@ -16,7 +15,6 @@ Using SCSS and JS
 - [Twitter](https://twitter.com/ikramdeveloper)
 - [StackOverflow](https://stackoverflow.com/users/13859212/ikram-ul-haq)
 
----
 
 ## 10 Mega Projects created using SCSS, JS and different technologies
 
@@ -40,13 +38,11 @@ Using SCSS and JS
 
 > [Wine House](https://wine-house-mega.netlify.app/) &ensp; [![Netlify Status](https://api.netlify.com/api/v1/badges/6eec4b86-80c9-462b-9c3b-f880a2477011/deploy-status)](https://app.netlify.com/sites/wine-house-mega/deploys)
 
----
 
 ## 🎓 Academic Honesty
 
 **DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
 
----
 
 ## Copyright
 
