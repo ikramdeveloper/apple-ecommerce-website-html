@@ -1,10 +1,10 @@
 # Apple Ecommerce Website
 
-###### Using SCSS and JS
+Using SCSS and JS
 
 ---
 
-### Author Links
+## Author Links
 
 👋 Hello, I'm Ikram Ul Haq - Web Developer & Coder
 
@@ -12,13 +12,13 @@
 
 🚀 Follow Me:
 
-- [Twitter](https://twitter.com/ikramdev)
-- [LinkedIn](https://www.linkedin.com/in/ikramdev/)
+- [LinkedIn](https://www.linkedin.com/in/ikramdeveloper/)
+- [Twitter](https://twitter.com/ikramdeveloper)
 - [StackOverflow](https://stackoverflow.com/users/13859212/ikram-ul-haq)
 
 ---
 
-### 10 Mega Projects created using SCSS, JS and different technologies
+## 10 Mega Projects created using SCSS, JS and different technologies
 
 > [Apple Ecommerce](https://apple-ecommerce-mega.netlify.app/) &ensp; [![Netlify Status](https://api.netlify.com/api/v1/badges/5f30c15c-5dd9-4616-89d9-e25dca0bd360/deploy-status)](https://app.netlify.com/sites/apple-ecommerce-mega/deploys)
 
@@ -42,12 +42,12 @@
 
 ---
 
-### 🎓 Academic Honesty
+## 🎓 Academic Honesty
 
 **DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
 
 ---
 
-### Copyright
+## Copyright
 
 - © 2022 Ikram Ul Haq - Images and text may have copyright issues
