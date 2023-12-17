@@ -7,7 +7,7 @@ Using SCSS and JS
 
 👋 Hello, I'm Ikram Ul Haq - Web Developer & Coder
 
-☕ [Buy Me A Coffee](https://www.buymeacoffee.com/ikramdev)
+☕ [Buy Me A Coffee](https://www.buymeacoffee.com/ikramdeveloper)
 
 🚀 Follow Me:
 
